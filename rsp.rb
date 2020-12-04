@@ -1,6 +1,6 @@
-money=100
+money = 100
 def rsc_bot
-[:камень,:ножницы,:бумагу][rand(0..2)]
+[:камень, :ножницы, :бумагу][rand(0..2)]
 end
 
 def game4(money)
@@ -13,7 +13,7 @@ def game4(money)
 			puts "1-камень, 2-ножницы,3-бумага"
 			cmd = gets.chomp.strip.to_i
 			 #после введения цифры, отдельно вынести всю прогу в метод, чтобы он вызывался if cmd>3 введи нормально else запустить всю прогу еще раз
-			user=arr[cmd-1]
+			user = arr[cmd-1]
 			bot = rsc_bot
 			puts "Вы выбрали #{user}"
 			puts "Бот выбрал #{bot}"
@@ -28,10 +28,10 @@ def game4(money)
 			elsif user == :ножницы && bot == :камень
 				money -= 1
 				puts "You lose. Ножницы сломались об камень. Ваш баланс:#{money}"
-			elsif user ==:ножницы && bot == :бумагу
+			elsif user == :ножницы && bot == :бумагу
 				money += 1
 				puts "You win!Ножницы разрезали бумагу! Ваш баланс:#{money}"
-			elsif user ==:бумагу  && rsc_bot == :камень
+			elsif user == :бумагу  && rsc_bot == :камень
 				money += 1
 				puts "You win! Бумага накрыла камень! Ваш баланс:#{money}"
 			elsif user == :бумагу && rsc_bot == :ножницы
@@ -42,6 +42,3 @@ def game4(money)
 	end
 end
 game4(money)
-
-=begin
-=end
