@@ -4,10 +4,11 @@ def rsc_bot
 end
 
 def game4(money)
+
 	if money <= 0
 		puts "Вы банкрот:(\nСпасибо за игру:)"
 		exit
-		else
+	else
 		arr = [:камень,:ножницы,:бумагу]
 		while true
 			puts "1-камень, 2-ножницы,3-бумага"

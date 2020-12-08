@@ -1,6 +1,7 @@
 class Book
 
 	attr_reader :last_person
+
 	def initialize
 		@hh = {}
 		@last_person = ''

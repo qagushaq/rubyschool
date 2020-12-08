@@ -1,15 +1,19 @@
 arr=[]
 def add_elements(arr)
+
   while true
     puts "Кого добавить в массив?"
     name = gets.chomp.strip.capitalize
     puts "Cколько ему лет?"
     age = gets.chomp.strip.to_i
+
     if name == "" and age == ""
        break
     end
+
     arr << [name,age]
   end
+
 end
 
 def show_elements(arr)

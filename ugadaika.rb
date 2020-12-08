@@ -1,6 +1,6 @@
 def ygadaika
-  try=10
-  n=50
+  try = 10
+  n = 50
   number = rand(1..n)
   1.upto(try) do |i|
     print "Я загадал число от 1 до #{n}, угадай какое. Попытка #{i}, Осталось попыток #{try+1-i}:"
